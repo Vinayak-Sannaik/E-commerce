@@ -19,7 +19,7 @@ app.get('/',(req,res) =>{
   res.render('home');
 })
 
-app.use('/add', router);
+app.use('/', router);
 
 
 

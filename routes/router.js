@@ -5,7 +5,6 @@ const Product = require('../models/products')
 
 //render add product page
 router.get('/',showAddProductPage);
-router.get('/add',showAddProductPage);
 router.post('/products/create',createProduct);
 
 //render all products page
