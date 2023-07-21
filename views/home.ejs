@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Buttons in 2x2 Format</title>
+  <style>
+    main {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+    }
+    header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    a {
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ecommerce</h1>
+  </header>
+  <main>
+  <div class="button-container">
+    <a href="/products/create" class="button">Add Products</a>
+    <a href="/products" class="button">See All Products</a>
+    <a href="/productUp" class="button">Update Quantity</a>
+    <a href="/products" class="button">Delete Products</a>
+  </div>
+</main>
+</body>
+</html>
