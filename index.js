@@ -15,11 +15,11 @@ app.set('view engine', 'ejs');
 app.use('/products/create',router);
 app.use('/products/:id',router);
 app.use('/productUp/:id',router);
-app.get('/home',(req,res) =>{
+app.get('/',(req,res) =>{
   res.render('home');
 })
 
-app.use('/', router);
+app.use('/add', router);
 
 
 
